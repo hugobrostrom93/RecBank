@@ -1,4 +1,4 @@
-@{
+@* @{
     ViewData["Title"] = "Recept";
 }
 
@@ -22,4 +22,29 @@ Smält smöret.
 Rör ihop ägg och socker i en bunke.
 Blanda de torra ingredienserna och rör ner i smeten tillsammans med smöret.
 Häll smeten i en smord och bröad form med löstagbar kant, ca 24 cm i diameter.
-Grädda i mitten av ugnen 12-14 min tills kakan är torr på ytan men fortfarande känns lite lös i mitten. Låt kakan svalna.</h3>
+Grädda i mitten av ugnen 12-14 min tills kakan är torr på ytan men fortfarande känns lite lös i mitten. Låt kakan svalna.</h3> *@
+
+
+@model IEnumerable<ReceptBank.Models.ReceptModel>
+
+<h2>Recpepttetetetet List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Recept</th>
+            <th>Ingredients</th>
+            <th>annat</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Recept in Model)
+        {
+            <tr>
+                <td>@Recept.Name</td>
+                <td>@Recept.Ingredients</td>
+                <td>@Recept.Ingredients</td>
+            </tr>
+        }
+    </tbody>
+</table>

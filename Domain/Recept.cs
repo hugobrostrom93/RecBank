@@ -37,7 +37,7 @@ public class Recept
         }
     }
 
-    public string _ingredients
+    public string Ingredients
     {
           get => _ingredients;
         private set
@@ -50,7 +50,7 @@ public class Recept
         }
     }
 
-    public Person(string name, string ingredients)
+    public Recept (string name, string ingredients)
     {
         Name = name;
         Ingredients = ingredients;
