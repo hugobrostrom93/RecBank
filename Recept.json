@@ -2,13 +2,21 @@
     {
         "recept_id": 1,
         "name": "Kladdkaka",
+<<<<<<< HEAD
         "ingredients": "Smor"
+=======
+        "ingredients": "bajs"
+>>>>>>> aeda8bf418a262b95f2754231cf2d791f34b5cce
     },
 
     {
         "recept_id": 2,
         "name": "Surkal",
+<<<<<<< HEAD
         "ingredients": "surkal"
+=======
+        "ingredients": "surkal och skit"
+>>>>>>> aeda8bf418a262b95f2754231cf2d791f34b5cce
     },
 
     {

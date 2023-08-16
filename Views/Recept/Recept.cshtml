@@ -1,12 +1,17 @@
 @model IEnumerable<ReceptBank.Models.ReceptModel>
 
-<h2>Recpepttetetetet List</h2>
+<h2>Recept List</h2>
 
 <table class="table">
     <thead>
         <tr>
             <th>Recept</th>
+<<<<<<< HEAD
             <!-- <th>Ingredients</th> -->
+=======
+            <th>Ingredients</th>
+         
+>>>>>>> aeda8bf418a262b95f2754231cf2d791f34b5cce
         </tr>
     </thead>
     <tbody>
@@ -17,10 +22,15 @@
 @foreach (var Recept in Model)
         {
             <tr>
+<<<<<<< HEAD
                 <button class="hover-effect"
                 style="margin-bottom: 7px; 
                 border-radius: 7px;
                 background-color: pink">@Recept.Name</button><br>
                 <!--<td>@Recept.Ingredients</td> -->
+=======
+                <td>@Recept.Name</td>
+                <td>@Recept.Ingredients</td>                
+>>>>>>> aeda8bf418a262b95f2754231cf2d791f34b5cce
             </tr>
         }
