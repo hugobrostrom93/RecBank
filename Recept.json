@@ -2,13 +2,13 @@
     {
         "recept_id": 1,
         "name": "Kladdkaka",
-        "ingredients": "Svenskt Smör från Arla® 150 g, Ägg 3, Strösocker 3 dl, Vetemjöl 2 dl, Kakao 1 dl, Vaniljsocker ½ msk, Salt 2 krm"
+        "ingredients": "bajs"
     },
 
     {
         "recept_id": 2,
-        "name": "Surkål",
-        "ingredients": "surkål och skit"
+        "name": "Surkal",
+        "ingredients": "surkal och skit"
     },
 
     {
