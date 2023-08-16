@@ -2,5 +2,5 @@ namespace ReceptBank.ApplicationServices;
 
 public interface IReceptService
 {
-    ReceptDTO GetRecept();
+    ReceptDTO GetRecept(int x);
 }

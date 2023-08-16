@@ -10,10 +10,10 @@ public class ReceptService : IReceptService
         _receptRepository = receptRepository;
     }
 
-    public ReceptDTO GetRecept()
+    public ReceptDTO GetRecept(int x)
     {
         // Get a Person object from the repository
-        var recept = _receptRepository.GetReceptById(1);
+        var recept = _receptRepository.GetReceptById(x);
         return new ReceptDTO
         {
             Name = recept.Name,

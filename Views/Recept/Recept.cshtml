@@ -1,30 +1,3 @@
-@* @{
-    ViewData["Title"] = "Recept";
-}
-
-<div class="text-center">
-    <h1 class="display-4">
-         <p>KLADDKAKA</p>
-        
-        Svenskt Smör från Arla®<br>
-150 g<br>
-Ägg 3<br>
-Strösocker 3 dl<br>
-Vetemjöl 2 dl<br>
-Kakao 1 dl<br>
-Vaniljsocker ½ msk<br>
-Salt 2 krm</h1>
-</div>
-
-<h3>
-Sätt ugnen på 175°.
-Smält smöret.
-Rör ihop ägg och socker i en bunke.
-Blanda de torra ingredienserna och rör ner i smeten tillsammans med smöret.
-Häll smeten i en smord och bröad form med löstagbar kant, ca 24 cm i diameter.
-Grädda i mitten av ugnen 12-14 min tills kakan är torr på ytan men fortfarande känns lite lös i mitten. Låt kakan svalna.</h3> *@
-
-
 @model IEnumerable<ReceptBank.Models.ReceptModel>
 
 <h2>Recpepttetetetet List</h2>
@@ -33,18 +6,21 @@ Grädda i mitten av ugnen 12-14 min tills kakan är torr på ytan men fortfarand
     <thead>
         <tr>
             <th>Recept</th>
-            <th>Ingredients</th>
-            <th>annat</th>
+            <!-- <th>Ingredients</th> -->
         </tr>
     </thead>
     <tbody>
-        @foreach (var Recept in Model)
+        
+    </tbody>
+    
+</table>
+@foreach (var Recept in Model)
         {
             <tr>
-                <td>@Recept.Name</td>
-                <td>@Recept.Ingredients</td>
-                <td>@Recept.Ingredients</td>
+                <button class="hover-effect"
+                style="margin-bottom: 7px; 
+                border-radius: 7px;
+                background-color: pink">@Recept.Name</button><br>
+                <!--<td>@Recept.Ingredients</td> -->
             </tr>
         }
-    </tbody>
-</table>

@@ -18,18 +18,19 @@ public class ReceptController : Controller
 
         public IActionResult Recept()
         {
+            var recepts = new List<ReceptModel>();
+            ReceptDTO[] receptDTO = new ReceptDTO[10];
+            ReceptModel[] recept = new ReceptModel[10];
+            for (int i = 1; i < 4; i++) {
             // Get the person from the service
-            var receptDTO = _receptService.GetRecept();
-            var recept = new ReceptModel
+            receptDTO[i] = _receptService.GetRecept(i);
+            recept[i] = new ReceptModel
             {
-                Name = receptDTO.Name,
-                Ingredients = receptDTO.Ingredients
+                Name = receptDTO[i].Name,
+               // Ingredients = receptDTO[i].Ingredients
             };
-
-            var recepts = new List<ReceptModel>
-            {
-                recept
-            };
+            recepts.Add(recept[i]);
+            }
             
             return View(recepts);
         }
