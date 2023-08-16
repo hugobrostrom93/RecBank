@@ -1,0 +1,59 @@
+using System.Text.RegularExpressions;
+
+namespace ReceptBank.Domain;
+
+
+//domain entitet som beskriver 
+//validators osv - går inte att förstöra objektet
+//properties är samma, men i dataentitet så är de gjorda i decorators för att kunna skriva i json,
+//i domain, upprätthålla integritet eller skit. 
+
+
+    //Public string namn
+    //get
+
+    //public string ingredients
+    //get
+
+    //construktor name = Name, ingre..=INgre..
+    //något om att man bara kan göra set via constructor, vad nu en construktor göööör fatta nada boo
+
+
+public class Recept
+{
+    private string _name = string.Empty;
+    private string _ingredients = string.Empty;
+
+    public string Name
+    {
+        get => _name;
+        private set
+        {
+            if (string.IsNullOrEmpty(value) || !Regex.IsMatch(value, @"^[a-zA-Z]+( [a-zA-Z]+)*$"))
+            {
+                throw new ArgumentException("Name must be letters only and may contain one space character between names.");
+            }
+            _name = value;
+        }
+    }
+
+    public string _ingredients
+    {
+          get => _ingredients;
+        private set
+        {
+            if (string.IsNullOrEmpty(value) || !Regex.IsMatch(value, @"^[a-zA-Z]+( [a-zA-Z]+)*$"))
+            {
+                throw new ArgumentException("Name must be letters only and may contain one space character between names.");
+            }
+            _ingredients = value;
+        }
+    }
+
+    public Person(string name, string ingredients)
+    {
+        Name = name;
+        Ingredients = ingredients;
+    }
+}
+
