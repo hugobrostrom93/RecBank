@@ -8,6 +8,13 @@ public IActionResult Recept ()
 return View();
 }
 public IActionResult Sök ()
+
+{
+return View();
+}
+
+public IActionResult ReceptJson ()
+
 {
 return View();
 }

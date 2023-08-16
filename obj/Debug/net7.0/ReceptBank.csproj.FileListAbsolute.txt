@@ -6,7 +6,6 @@ C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\bi
 C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\bin\Debug\net7.0\ReceptBank.runtimeconfig.json
 C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\bin\Debug\net7.0\ReceptBank.dll
 C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\bin\Debug\net7.0\ReceptBank.pdb
-C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\obj\Debug\net7.0\ReceptBank.csproj.AssemblyReference.cache
 C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\obj\Debug\net7.0\ReceptBank.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\obj\Debug\net7.0\ReceptBank.AssemblyInfoInputs.cache
 C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\obj\Debug\net7.0\ReceptBank.AssemblyInfo.cs
@@ -29,3 +28,4 @@ C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\ob
 C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\obj\Debug\net7.0\ReceptBank.pdb
 C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\obj\Debug\net7.0\ReceptBank.genruntimeconfig.cache
 C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\obj\Debug\net7.0\ref\ReceptBank.dll
+C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\bin\Debug\net7.0\Recept.json
