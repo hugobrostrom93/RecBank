@@ -17,7 +17,7 @@ public class ReceptRepoJson : IReceptRepo
     public Recept GetReceptById(int id)
     {
         var recept = ReadFromFile();
-        var receptData = recept.Find(p => p.Id == id);
+        var receptData = recept.Find(p => p.ReceptId == id);
 
         return receptData != null ? new Recept(receptData.Name, receptData.Ingredients) : null;
     }

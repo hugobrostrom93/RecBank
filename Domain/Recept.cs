@@ -8,17 +8,6 @@ namespace ReceptBank.Domain;
 //properties är samma, men i dataentitet så är de gjorda i decorators för att kunna skriva i json,
 //i domain, upprätthålla integritet eller skit. 
 
-
-    //Public string namn
-    //get
-
-    //public string ingredients
-    //get
-
-    //construktor name = Name, ingre..=INgre..
-    //något om att man bara kan göra set via constructor, vad nu en construktor göööör fatta nada boo
-
-
 public class Recept
 {
     private string _name = string.Empty;

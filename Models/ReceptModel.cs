@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.SignalR;
 
 namespace ReceptBank.Models;
-public class Recept
+public class ReceptModel
 {
     
     public int ReceptId {get; set;}

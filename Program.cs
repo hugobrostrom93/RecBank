@@ -1,9 +1,17 @@
+using ReceptBank.ApplicationServices;
+using ReceptBank.Domain;
+using ReceptBank.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+// Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<IReceptService, ReceptService>();
+builder.Services.AddScoped<IReceptRepo, ReceptRepoJson>();
 
 var app = builder.Build();
+app.Urls.Add("http://*:5000");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
