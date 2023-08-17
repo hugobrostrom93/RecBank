@@ -34,4 +34,21 @@ public class ReceptController : Controller
             
             return View(recepts);
         }
+
+        //Assuming you have a method in your IReceptService interface to remove a recipe by its ID, 
+        //you can call that method from your controller.
+        
+        [HttpPost]
+        public IActionResult Remove(int id)
+        {
+            var remove = _receptService.Remove(id);
+            return View(Recept); // Redirect back to the recipe list
+        }
+            
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            var edit = _receptService.Edit(id);
+            return View(Recept); // Redirect back to the recipe list
+        }
 }

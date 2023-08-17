@@ -20,4 +20,26 @@ public class ReceptService : IReceptService
             Ingredients = recept.Ingredients
         };
     }
+
+    public ReceptDTO Remove(int Id)
+    {
+        var recept = _receptRepository.GetReceptById(1);
+        return new ReceptDTO
+        {
+            // Recipes.Remove(Recept);
+            // _context.SaveChanges();
+        };
+      
+    }
+    public ReceptDTO Edit(int Id)
+    {
+        var recept = _receptRepository.GetReceptById(1);
+        return new ReceptDTO
+        {
+            // Recipes.Edit(Recept);
+            // _context.SaveChanges();
+        };
+    }
+
+
 }
