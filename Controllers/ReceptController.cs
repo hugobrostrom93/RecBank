@@ -22,6 +22,7 @@ public class ReceptController : Controller
             _receptService = receptService;
         }
 
+        //presentera listan - fungera i loop.
         public IActionResult Recept()
         {
             var recepts = new List<ReceptViewModel>();
