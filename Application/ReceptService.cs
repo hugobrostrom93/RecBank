@@ -1,3 +1,5 @@
+
+
 namespace ReceptBank.ApplicationServices;
 using ReceptBank.Domain;
 
@@ -10,10 +12,10 @@ public class ReceptService : IReceptService
         _receptRepository = receptRepository;
     }
 
-    public ReceptDTO GetRecept(int x)
+    public ReceptDTO GetRecepts()
     {
         // Get a Person object from the repository
-        var recept = _receptRepository.GetReceptById(x);
+        var recept = _receptRepository.GetReceptById(1);
         return new ReceptDTO
         {
             Name = recept.Name,
@@ -41,5 +43,25 @@ public class ReceptService : IReceptService
         };
     }
 
+    public ReceptDTO Create()
+    {
+        var recept = _receptRepository.GetReceptById(1);
+        return new ReceptDTO
+        {
+            // Recipes.Remove(Recept);
+            // _context.SaveChanges();
+        };
+      
+    }
+    public ReceptDTO GetReceptById(int Id)
+    {
+        var recept = _receptRepository.GetReceptById(1);
+        return new ReceptDTO
+        {
+            // Recipes.Remove(Recept);
+            // _context.SaveChanges();
+        };
+      
+    }
 
 }
