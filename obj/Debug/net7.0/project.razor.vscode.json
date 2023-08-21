@@ -24072,8 +24072,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\89hanmad\\source\\repos\\Att drifta molnapplikationer\\Recept\\ReceptBank\\Views\\Recept\\ReceptJson.cshtml",
-      "TargetPath": "Views\\Recept\\ReceptJson.cshtml",
+      "FilePath": "c:\\Users\\89hanmad\\source\\repos\\Att drifta molnapplikationer\\Recept\\ReceptBank\\Views\\Recept\\Edit.cshtml",
+      "TargetPath": "Views\\Recept\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\89hanmad\\source\\repos\\Att drifta molnapplikationer\\Recept\\ReceptBank\\Views\\Recept\\Remove.cshtml",
+      "TargetPath": "Views\\Recept\\Remove.cshtml",
       "FileKind": "mvc"
     }
   ]
