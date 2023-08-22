@@ -1,6 +1,8 @@
 
 
 namespace ReceptBank.ApplicationServices;
+
+using System.Reflection.Metadata.Ecma335;
 using ReceptBank.Domain;
 
 public class ReceptService : IReceptService
@@ -12,16 +14,17 @@ public class ReceptService : IReceptService
         _receptRepository = receptRepository;
     }
 
-    public ReceptDTO GetRecepts()
+    public List<ReceptDTO> GetRecepts()
     {
         // Get a Person object from the repository
-        var recept = _receptRepository.GetReceptById(1);
-        return new ReceptDTO
+        var recept = _receptRepository.GetRecepts();
+        return new List<ReceptDTO>
         {
             Name = recept.Name,
             Ingredients = recept.Ingredients
         };
     }
+
 
     public ReceptDTO Remove(int Id)
     {

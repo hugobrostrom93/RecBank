@@ -1,7 +1,7 @@
 [
     {
         "recept_id": 1,
-        "name": "Kladdkaka",
+        "name": "glass",
         "ingredients": "Smor"
     },
 
@@ -15,7 +15,14 @@
         "recept_id": 3,
         "name": "Burrito",
         "ingredients": "olika"
+    },
+
+    {
+        "recept_id": 4,
+        "name": "mjau",
+        "ingredients": "stuff"
     }
+
 
 ]
 

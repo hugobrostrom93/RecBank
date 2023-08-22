@@ -6,30 +6,24 @@
     <thead>
         <tr>
             <th>Recept</th>
-            <!-- <th>Ingredients</th> -->
+            <th>Ingredients</th>
         </tr>
     </thead>
     <tbody>
         
-    </tbody>    
-</table>
-
 @foreach (var Recept in Model)
         {
             <tr>
-<<<<<<< HEAD
-=======
-                <td><a asp-asp-controller="Recept" asp-action="Edit" >Edit</a><td>
-                //<td><a asp-asp-controller="Recept" asp-action="Remove" >Remove</a><td>
->>>>>>> REC-11-edit-recipe
-                <button class="hover-effect"
+                <td><button class="hover-effect"
                 style="margin-bottom: 7px; 
                 border-radius: 7px;
-                background-color: pink">@Recept.Name</button><br>
-                <!--<td>@Recept.Ingredients</td> -->
-<<<<<<< HEAD
-=======
-           
->>>>>>> REC-11-edit-recipe
-            </tr>
-        }
+                background-color: pink">@Recept.Name</button><br></td>
+                
+                <td><button class="hover-effect"
+                style="margin-bottom: 7px; 
+                border-radius: 7px;
+                background-color: pink">@Recept.Ingredients</button><br></td>
+           </tr>
+        } 
+    </tbody>    
+</table>

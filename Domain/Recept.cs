@@ -14,6 +14,12 @@ public class Recept
     private string _name = string.Empty;
     private string _ingredients = string.Empty;
 
+
+    public Recept (string name, string ingredients)
+    {
+        Name = name;
+        Ingredients = ingredients;
+    }
     public string Name
     {
         get => _name;
@@ -29,7 +35,7 @@ public class Recept
 
     public string Ingredients
     {
-          get => _ingredients;
+        get => _ingredients;
         private set
         {
             if (string.IsNullOrEmpty(value) || !Regex.IsMatch(value, @"^[a-zA-Z]+( [a-zA-Z]+)*$"))
@@ -38,12 +44,6 @@ public class Recept
             }
             _ingredients = value;
         }
-    }
-
-    public Recept (string name, string ingredients)
-    {
-        Name = name;
-        Ingredients = ingredients;
     }
 }
 

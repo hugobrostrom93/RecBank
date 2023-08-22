@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Text.Encodings.Web;
 using ReceptBank.ApplicationServices;
 using ReceptBank.Models;
+using Microsoft.AspNetCore.Http.Features;
 
 namespace ReceptBank.Controllers;
 
@@ -23,23 +24,45 @@ public class ReceptController : Controller
         }
 
         //presentera listan - fungera i loop.
-        public IActionResult Recept()
+       
+       public IActionResult Recept()
         {
-            var recepts = new List<ReceptViewModel>();
-            ReceptDTO[] receptDTO = new ReceptDTO[10];
-            ReceptViewModel[] recept = new ReceptViewModel[10];
-            for (int i = 1; i < 4; i++) {
-            // Get the person from the service
-            receptDTO[i] = _receptService.GetRecepts();
-            recept[i] = new ReceptViewModel
+            List<ReceptDTO> receptDTOs = _receptService.GetRecepts(); // Assuming _receptService.GetRecepts() returns an array
+            List<ReceptViewModel> recepts = new List<ReceptViewModel>();
+
+            foreach (var receptDTO in receptDTOs)
             {
-                Name = receptDTO[i].Name,
-               // Ingredients = receptDTO[i].Ingredients
-            };
-            recepts.Add(recept[i]);
+                var item = new ReceptViewModel
+                {
+                    Name = receptDTO.Name,
+                    Ingredients = receptDTO.Ingredients
+                };
+                recepts.Add(item);
             }
-            
+
             return View(recepts);
+        }
+
+
+
+            // // var recepts = new List<ReceptViewModel>();
+            // // var item = new ReceptViewModel{
+            // //     Name = "hej",
+            // //     Ingredients = "hkjh"
+            // // };
+            // // recepts.Add(item);   
+            // // return View(recepts);
+
+
+            // foreach (ReceptDTO in receptDTOs)
+            // {
+            //     var item = new ReceptViewModel{
+            //     Name = ReceptDTO.Name,
+            //     Ingredients = ReceptDTO.Ingredients
+            //     return View(recepts);
+            // }
+            //     recepts.Add(recept[]);
+            // }
         }
 
         //Assuming you have a method in your IReceptService interface to remove a recipe by its ID, 
