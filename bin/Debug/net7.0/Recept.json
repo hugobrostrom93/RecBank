@@ -2,25 +2,25 @@
     {
         "recept_id": 1,
         "name": "glass",
-        "ingredients": "Smor"
+        "ingredients": "Kondenserad mjölk, grädde, vanilj"
     },
 
     {
         "recept_id": 2,
         "name": "Surkal",
-        "ingredients": "surkal"
+        "ingredients": "Kål, salt, vatten"
     },
 
     {
         "recept_id": 3,
         "name": "Burrito",
-        "ingredients": "olika"
+        "ingredients": "Tortilla, köttfärs, lök, paprika, majs, bönor, kryddor"
     },
 
     {
         "recept_id": 4,
         "name": "mjau",
-        "ingredients": "stuff"
+        "ingredients": "mjau, mjau, mjau"
     }
 
 

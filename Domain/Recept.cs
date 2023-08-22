@@ -38,10 +38,10 @@ public class Recept
         get => _ingredients;
         private set
         {
-            if (string.IsNullOrEmpty(value) || !Regex.IsMatch(value, @"^[a-zA-Z]+( [a-zA-Z]+)*$"))
+            /*if (string.IsNullOrEmpty(value) || !Regex.IsMatch(value, @"^[a-zA-Z]+( [a-zA-Z]+)*$"))
             {
                 throw new ArgumentException("Name must be letters only and may contain one space character between names.");
-            }
+            }*/
             _ingredients = value;
         }
     }

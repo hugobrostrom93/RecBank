@@ -1,5 +1,10 @@
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<link rel="stylesheet" href="~/ReceptBank.styles.css" asp-append-version="true" />
+
 @model IEnumerable<ReceptBank.Models.ReceptViewModel>
 
+<div class="align-self-start">
 <h1>Edit Page för Recepten</h1>
 
 @* <form asp-action="Edit" method="post">
@@ -7,16 +12,16 @@
 </form>  *@
 
 <p>You can also use the contact form below to edit a piece of cake:</p>
+    <form asp-action="Edit" method="post">
+        <label for="Recept.Name" class="col-sm-1 col-form-label">Recept:</label>
+        <input type="Recept.Name" id="0" name="name" required><br>
 
-<form>
-    <label for="Recept.Name">Name:</label>
-    <input type="Recept.Name" id="0" name="name" required><br>
+        <label for="Recept.Ingredients" class="col-sm-1 col-form-label">Ingredients:</label>
+        <input type="Recept.Ingredients" id="0" name="email" required><br>
 
-    <label for="Recept.Ingredients">Ingredients:</label>
-    <input type="Recept.Ingredients" id="0" name="email" required><br>
+         @* <label for="message">How to:</label><br>
+        <textarea id="0" name="message" rows="4" required></textarea><br> *@
 
-    @* <label for="message">How to:</label><br>
-    <textarea id="0" name="message" rows="4" required></textarea><br> *@
-
-    <button type="submit">Send Message</button>
-</form>
+         <button type="submit">Edit Item</button>
+    </form>
+</div>
