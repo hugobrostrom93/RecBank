@@ -42,43 +42,21 @@ public class ReceptController : Controller
 
             return View(recepts);
         }
-
-
-
-            // // var recepts = new List<ReceptViewModel>();
-            // // var item = new ReceptViewModel{
-            // //     Name = "hej",
-            // //     Ingredients = "hkjh"
-            // // };
-            // // recepts.Add(item);   
-            // // return View(recepts);
-
-
-            // foreach (ReceptDTO in receptDTOs)
-            // {
-            //     var item = new ReceptViewModel{
-            //     Name = ReceptDTO.Name,
-            //     Ingredients = ReceptDTO.Ingredients
-            //     return View(recepts);
-            // }
-            //     recepts.Add(recept[]);
-            // }
-        }
+ }
 
         //Assuming you have a method in your IReceptService interface to remove a recipe by its ID, 
         //you can call that method from your controller.
         
-        [HttpPost]
-        public IActionResult Remove(int id)
-        {
-            var remove = _receptService.Remove(id);
-            return View(Recept); // Redirect back to the recipe list
-        }
+        // [HttpPost]
+        // public IActionResult Remove(int id)
+        // {
+        //     var remove = _receptService.Remove(id);
+        //     return View(Recept); // Redirect back to the recipe list
+        // }
             
-        [HttpGet]
-        public IActionResult Edit(int id)
-        {
-            var edit = _receptService.Edit(id);
-            return View(Recept); // Redirect back to the recipe list
-        }
-}
+        // [HttpGet]
+        // public IActionResult Edit(int id)
+        // {
+        //     var edit = _receptService.Edit(id);
+        //     return View(Recept); // Redirect back to the recipe list
+        // }

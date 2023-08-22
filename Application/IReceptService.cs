@@ -2,7 +2,7 @@ namespace ReceptBank.ApplicationServices;
 
 public interface IReceptService
 {
-    ReceptDTO GetRecepts();
+    List<ReceptDTO> GetRecepts();
     //plural - returvärde lista
 
     ReceptDTO Remove(int Id);
