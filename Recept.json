@@ -2,25 +2,29 @@
     {
         "recept_id": 1,
         "name": "glass",
+<<<<<<< HEAD
         "ingredients": "Smor och potatis"
+=======
+        "ingredients": "Kondenserad mjölk, grädde, vanilj"
+>>>>>>> 960ac729dcc17b6c20ecb1b9e47a48ad0c0ac8c4
     },
 
     {
         "recept_id": 2,
         "name": "Surkal",
-        "ingredients": "surkal"
+        "ingredients": "Kål, salt, vatten"
     },
 
     {
         "recept_id": 3,
         "name": "Burrito",
-        "ingredients": "olika"
+        "ingredients": "Tortilla, köttfärs, lök, paprika, majs, bönor, kryddor"
     },
 
     {
         "recept_id": 4,
         "name": "mjau",
-        "ingredients": "stuff"
+        "ingredients": "mjau, mjau, mjau"
     }
 
 

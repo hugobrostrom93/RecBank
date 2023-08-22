@@ -42,6 +42,18 @@ public class ReceptController : Controller
 
             return View(recepts);
         }
+
+        /*[HttpPost]
+        public IActionResult Edit(int id)
+        {
+            var edit = _receptService.Edit(id);
+            return View(edit); // Redirect back to the recipe list
+        }*/
+
+        [HttpGet]
+        public IActionResult Edit(){
+            return View();
+        }
  }
 
         //Assuming you have a method in your IReceptService interface to remove a recipe by its ID, 
@@ -54,9 +66,3 @@ public class ReceptController : Controller
         //     return View(Recept); // Redirect back to the recipe list
         // }
             
-        // [HttpGet]
-        // public IActionResult Edit(int id)
-        // {
-        //     var edit = _receptService.Edit(id);
-        //     return View(Recept); // Redirect back to the recipe list
-        // }

@@ -35,11 +35,14 @@ public class ReceptRepoJson : IReceptRepo
     }
    
 
+    //public List<Score>? GetScore() => JsonConvert.DeserializeObject<List<Score>>(File.ReadAllText(Path));
+    
     private List<ReceptEntityJson> ReadFromFile()
     {
         if (File.Exists(_filePath))
         {
             var json = File.ReadAllText(_filePath);
+            
             return JsonSerializer.Deserialize<List<ReceptEntityJson>>(json) ?? new List<ReceptEntityJson>();
         }
 
