@@ -63,7 +63,7 @@ public class ReceptController : Controller
             // }
             //     recepts.Add(recept[]);
             // }
-        }
+        
 
         //Assuming you have a method in your IReceptService interface to remove a recipe by its ID, 
         //you can call that method from your controller.
