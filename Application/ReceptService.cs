@@ -16,14 +16,26 @@ public class ReceptService : IReceptService
 
     public List<ReceptDTO> GetRecepts()
     {
-        // Get a Person object from the repository
-        var recept = _receptRepository.GetRecepts();
-        return new List<ReceptDTO>
+        // Get a list of Recept objects from the repository
+        var recepts = _receptRepository.GetRecepts();
+
+        // Create a list of ReceptDTO objects
+        var receptDTOs = new List<ReceptDTO>();
+
+        foreach (var recept in recepts)
         {
-            Name = recept.Name,
-            Ingredients = recept.Ingredients
-        };
+            var receptDTO = new ReceptDTO
+            {
+                Name = recept.Name,
+                Ingredients = recept.Ingredients
+            };
+
+            receptDTOs.Add(receptDTO);
+        }
+
+        return receptDTOs;
     }
+
 
 
     public ReceptDTO Remove(int Id)
