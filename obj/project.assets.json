@@ -8,11 +8,16 @@
     "net7.0": []
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\78caratz\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\89hanmad\\.nuget\\packages\\": {}
+>>>>>>> d3e794bfdeff080865c2c65bd5f5acfeb816cfae
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\78caratz\\Documents\\Clo22dev\\ReceptBank\\ReceptBank.csproj",
       "projectName": "ReceptBank",
       "projectPath": "C:\\Users\\78caratz\\Documents\\Clo22dev\\ReceptBank\\ReceptBank.csproj",
@@ -21,6 +26,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\78caratz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\89hanmad\\source\\repos\\Att drifta molnapplikationer\\Recept\\ReceptBank\\ReceptBank.csproj",
+      "projectName": "ReceptBank",
+      "projectPath": "C:\\Users\\89hanmad\\source\\repos\\Att drifta molnapplikationer\\Recept\\ReceptBank\\ReceptBank.csproj",
+      "packagesPath": "C:\\Users\\89hanmad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\89hanmad\\source\\repos\\Att drifta molnapplikationer\\Recept\\ReceptBank\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\89hanmad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> d3e794bfdeff080865c2c65bd5f5acfeb816cfae
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -64,7 +79,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

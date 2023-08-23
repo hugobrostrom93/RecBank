@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "5fwcvXB3ugyDvj0PD691l+jqTvcm0eyOrZuS5br6FKyY45YhitTafyCtEw1Ld22WXUrWc/yKoTxMc0VFcoV79w==",
   "success": true,
   "projectFilePath": "C:\\Users\\78caratz\\Documents\\Clo22dev\\ReceptBank\\ReceptBank.csproj",
+=======
+  "dgSpecHash": "49UgXFN6v/UV9FiWTzCzC/vqBl2lSoBRS76z/0p/q28fej3WlN5ZX4F7vYmlKC/qpttnzefP4gEXt5CaZDPz/g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\89hanmad\\source\\repos\\Att drifta molnapplikationer\\Recept\\ReceptBank\\ReceptBank.csproj",
+>>>>>>> d3e794bfdeff080865c2c65bd5f5acfeb816cfae
   "expectedPackageFiles": [],
   "logs": []
 }

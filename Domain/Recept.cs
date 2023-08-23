@@ -7,6 +7,7 @@ namespace ReceptBank.Domain;
 //validators osv - går inte att förstöra objektet
 //properties är samma, men i dataentitet så är de gjorda i decorators för att kunna skriva i json,
 //i domain, upprätthålla integritet eller skit. 
+//skapas i "verkligeheten" - definerar vad Recept består av
 
 public class Recept
 {

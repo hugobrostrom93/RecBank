@@ -1,0 +1,22 @@
+@model IEnumerable<ReceptBank.Models.ReceptModel>
+
+<h1>Edit Page för Recepten</h1>
+
+@* <form asp-action="Edit" method="post">
+    <label asp-for="@Model.Edit">Recept</label><input asp-for="@Model.Edit"/>
+</form>  *@
+
+<p>You can also use the contact form below to edit a piece of cake:</p>
+
+<form>
+    <label for="Recept.Name">Name:</label>
+    <input type="Recept.Name" id="0" name="name" required><br>
+
+    <label for="Recept.Ingredients">Ingredients:</label>
+    <input type="Recept.Ingredients" id="0" name="email" required><br>
+
+    @* <label for="message">How to:</label><br>
+    <textarea id="0" name="message" rows="4" required></textarea><br> *@
+
+    <button type="submit">Send Message</button>
+</form>
