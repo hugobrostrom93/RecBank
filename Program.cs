@@ -14,7 +14,7 @@ builder.Services.AddScoped<IReceptRepo, ReceptRepoJson>();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
 .AddCookie();
 var app = builder.Build();
-app.Urls.Add("http://*:5000");
+//app.Urls.Add("http://*:5000");
 
 // Configure the HTTP request pipeline.
 //alla Use grejjor är middleware - HTTP middleware pipeline

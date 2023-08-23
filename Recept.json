@@ -2,11 +2,7 @@
     {
         "recept_id": 1,
         "name": "glass",
-<<<<<<< HEAD
-        "ingredients": "Smor och potatis"
-=======
         "ingredients": "Kondenserad mjölk, grädde, vanilj"
->>>>>>> 960ac729dcc17b6c20ecb1b9e47a48ad0c0ac8c4
     },
 
     {

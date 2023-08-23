@@ -1,2 +1,6 @@
 TODO:
 clear cookies on close
+redirect to action - när man har loggat in så kommer man till ReceptBank
+lägg till authorized decorator på recept controller
+auth authz på program.css
+endpoints - program.cs - search grejs 
