@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ericr\\.nuget\\packages\\": {}
+    "C:\\Users\\78caratz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ericr\\Documents\\FactoryPizza\\Grupparbete\\ReceptBank\\ReceptBank.csproj",
+      "projectUniqueName": "C:\\Users\\78caratz\\Documents\\Clo22dev\\ReceptBank\\ReceptBank.csproj",
       "projectName": "ReceptBank",
-      "projectPath": "C:\\Users\\ericr\\Documents\\FactoryPizza\\Grupparbete\\ReceptBank\\ReceptBank.csproj",
-      "packagesPath": "C:\\Users\\ericr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ericr\\Documents\\FactoryPizza\\Grupparbete\\ReceptBank\\obj\\",
+      "projectPath": "C:\\Users\\78caratz\\Documents\\Clo22dev\\ReceptBank\\ReceptBank.csproj",
+      "packagesPath": "C:\\Users\\78caratz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\78caratz\\Documents\\Clo22dev\\ReceptBank\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ericr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\78caratz\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

@@ -61,3 +61,14 @@ C:\Users\ericr\Documents\FactoryPizza\Grupparbete\ReceptBank\obj\Debug\net7.0\re
 C:\Users\ericr\Documents\FactoryPizza\Grupparbete\ReceptBank\obj\Debug\net7.0\ReceptBank.pdb
 C:\Users\ericr\Documents\FactoryPizza\Grupparbete\ReceptBank\obj\Debug\net7.0\ReceptBank.genruntimeconfig.cache
 C:\Users\ericr\Documents\FactoryPizza\Grupparbete\ReceptBank\obj\Debug\net7.0\ref\ReceptBank.dll
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.csproj.AssemblyReference.cache
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.AssemblyInfoInputs.cache
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.AssemblyInfo.cs
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.csproj.CoreCompileInputs.cache
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.RazorAssemblyInfo.cache
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.RazorAssemblyInfo.cs
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.dll
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\refint\ReceptBank.dll
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.pdb
