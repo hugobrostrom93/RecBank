@@ -13,13 +13,16 @@ public class Recept
 {
     private string _name = string.Empty;
     private string _ingredients = string.Empty;
+    private int _receptID;
 
 
-    public Recept (string name, string ingredients)
+    public Recept(string name, string ingredients, int id)
     {
         Name = name;
         Ingredients = ingredients;
+        ReceptId = id;
     }
+
     public string Name
     {
         get => _name;
@@ -44,6 +47,14 @@ public class Recept
             }*/
             _ingredients = value;
         }
+    }
+
+
+    public int ReceptId
+    {
+        get => ReceptId;
+        private set => _receptID = value;
+
     }
 }
 

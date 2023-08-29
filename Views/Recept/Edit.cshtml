@@ -1,27 +1,24 @@
-<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/ReceptBank.styles.css" asp-append-version="true" />
+@model ReceptBank.Models.ReceptViewModel
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.ReceptId) <!-- Include a hidden field to store the recipe ID -->
 
-@model IEnumerable<ReceptBank.Models.ReceptViewModel>
+    <div>
+        <td>@Model.ReceptId</td>
+        <td>@Model.Name</td>
+        @Html.LabelFor(model => model.Name)
+        @Html.TextBoxFor(model => model.Name)
+    </div>
 
-<div class="align-self-start">
-<h1>Edit Page för Recepten</h1>
+    <div>
 
-@* <form asp-action="Edit" method="post">
-    <label asp-for="@Model.Edit">Recept</label><input asp-for="@Model.Edit"/>
-</form>  *@
+        <td>@Model.Ingredients</td>
+        @Html.LabelFor(model => model.Ingredients)
+        @Html.TextAreaFor(model => model.Ingredients)
+    </div>
 
-<p>You can also use the form below to edit a piece of cake:</p>
-    <form asp-action="Edit" method="post">
-        <label for="Recept.Name" class="col-sm-1 col-form-label">Recept:</label>
-        <input type="Recept.Name" id="0" name="name" required><br>
+    <!-- Add more fields for other recipe details -->
 
-        <label for="Recept.Ingredients" class="col-sm-1 col-form-label">Ingredients:</label>
-        <input type="Recept.Ingredients" id="0" name="email" required><br>
+    <button type="submit">Save Changes</button>
+}
 
-         @* <label for="message">How to:</label><br>
-        <textarea id="0" name="message" rows="4" required></textarea><br> *@
-
-         <button type="submit">Edit Item</button>
-    </form>
-</div>

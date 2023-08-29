@@ -10,17 +10,22 @@
         </tr>
     </thead>
     <tbody>
-        
-@foreach (var Recept in Model)
-        {
-            <tr>
-                <td><button class="hover-effect"
-                style="margin-bottom: 7px; 
-                border-radius: 7px;
-                background-color: pink">@Recept.Name</button><br></td>
-           </tr>
-        } 
-    </tbody>    
+
+    @foreach (var recept in Model)
+{
+    <tr>
+        <td>
+            <form method="get" action="@Url.Action("Edit")">
+                
+                <input type="hidden" name="id" value="@recept.ReceptId" />
+                <button type="submit" class="hover-effect" style="margin-bottom: 7px; border-radius: 7px; background-color: pink">
+                    @recept.Name
+                </button>
+            </form>
+        </td>
+    </tr>
+}
+
 </table>
 
 

@@ -9,10 +9,20 @@ using ReceptBank.Domain;
 
 public class ReceptRepo : IReceptRepo
 {
+    public Recept Edit(Recept originalRecept)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Recept Edit()
+    {
+        throw new NotImplementedException();
+    }
+
     public Recept GetReceptById(int id)
     {
         //TODO skriv rätt
-        return new Recept("mocka", "mocka2"); // Mock implementation
+        return new Recept("mocka", "mocka2", 2); // Mock implementation
     }   
     
       public List<Recept> GetRecepts()
@@ -20,9 +30,9 @@ public class ReceptRepo : IReceptRepo
             List<Recept> recipes = new List<Recept>();
 
             // Adding sample recipes with names and ingredients
-            recipes.Add(new Recept("Recipe 1", "Ingredient 1, Ingredient 2"));
-            recipes.Add(new Recept("Recipe 2", "Ingredient 3, Ingredient 4"));
-            recipes.Add(new Recept("Recipe 3", "Ingredient 5, Ingredient 6"));
+            recipes.Add(new Recept("Recipe 1", "Ingredient 1, Ingredient 2", 1));
+            recipes.Add(new Recept("Recipe 2", "Ingredient 3, Ingredient 4", 2));
+            recipes.Add(new Recept("Recipe 3", "Ingredient 5, Ingredient 6", 3));
 
             return recipes;
         }

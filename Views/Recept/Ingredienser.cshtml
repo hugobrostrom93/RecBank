@@ -1,0 +1,26 @@
+@model IEnumerable<ReceptBank.Models.ReceptViewModel>
+
+<h2>Recept List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Recept</th>
+            <th>Ingredients</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var Recept in Model)
+        {
+            <tr>
+                <td>@Recept.ReceptId</td>
+                <td>@Recept.Name</td>
+                <td>@Recept.Ingredients</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+

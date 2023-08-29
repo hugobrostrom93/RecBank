@@ -18,7 +18,6 @@ namespace ReceptBank.Controllers;
 public class ReceptController : Controller
 
 {
-
     private readonly IReceptService _receptService;
 
     public ReceptController(IReceptService receptService)
@@ -26,16 +25,16 @@ public class ReceptController : Controller
         _receptService = receptService;
     }
 
-    //presentera listan - fungera i loop.
     public IActionResult Recept()
     {
-        List<ReceptDTO> receptDTOs = _receptService.GetRecepts(); // Assuming _receptService.GetRecepts() returns an array
+        List<ReceptDTO> receptDTOs = _receptService.GetRecepts();
         List<ReceptViewModel> recepts = new List<ReceptViewModel>();
 
         foreach (var receptDTO in receptDTOs)
         {
             var item = new ReceptViewModel
             {
+                ReceptId = receptDTO.ReceptId,
                 Name = receptDTO.Name,
                 Ingredients = receptDTO.Ingredients
             };
@@ -45,23 +44,53 @@ public class ReceptController : Controller
         return View(recepts);
     }
 
-    /*[HttpPost]
+    [HttpGet]
     public IActionResult Edit(int id)
     {
-        var edit = _receptService.Edit(id);
-        return View(edit); // Redirect back to the recipe list
-    }*/
+        ReceptDTO receptToEdit = _receptService.GetReceptById(id);
 
+        if (receptToEdit == null)
+        {
+            return NotFound(); // Handle scenario where recipe is not found
+        }
 
-    [HttpGet]
-    public IActionResult Edit()
-    {
-        return View();
+        // Create a ReceptViewModel and populate it with data from the ReceptDTO
+        ReceptViewModel editRecept = new ReceptViewModel
+        {
+            ReceptId = receptToEdit.ReceptId,
+            Name = receptToEdit.Name,
+            Ingredients = receptToEdit.Ingredients
+            // Populate other properties as needed
+        };
+
+        return View(editRecept);
     }
+
 }
 
-//Assuming you have a method in your IReceptService interface to remove a recipe by its ID, 
-//you can call that method from your controller.
+
+// [HttpPost]
+// public IActionResult Ingredienser(int id)
+// {
+//     List<ReceptDTO> receptDTOs = _receptService.GetReceptById(id);
+//     List<ReceptViewModel> recepts = new List<ReceptViewModel>();
+
+//     foreach (var receptDTO in receptDTOs)
+//     {
+//         var item = new ReceptViewModel
+//         {
+//             id = receptDTO.ReceptId,
+//             Ingredients = receptDTO.Ingredients,
+//             var edit = _receptService.Edit(id)
+//         };
+//         recepts.Add(item);
+//     }
+
+//     //return View(recepts);
+//     //RedirectToAction(Recept);
+// }
+
+
 
 // [HttpPost]
 // public IActionResult Remove(int id)
