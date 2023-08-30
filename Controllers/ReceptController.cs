@@ -66,6 +66,16 @@ public class ReceptController : Controller
         return View(editRecept);
     }
 
+    [HttpPost]
+    public IActionResult Remove(int id)
+    {
+        // Call the service to remove the recipe
+        _receptService.Remove(id);
+
+        // Redirect back to the recipe list view
+        return View("Remove");
+    }
+
 }
 
 

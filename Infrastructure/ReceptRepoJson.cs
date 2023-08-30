@@ -56,4 +56,26 @@ public class ReceptRepoJson : IReceptRepo
         return new List<ReceptEntityJson>();
     }
 
+    public void Remove(int id)
+    {
+        var receptList = ReadFromFile();
+
+        int index = receptList.FindIndex(receptData => receptData.ReceptId == id);
+
+        if (index != -1)
+        {
+            receptList.RemoveAt(index);
+            SaveToFile(receptList);
+        }
+    }
+
+        private void SaveToFile(List<ReceptEntityJson> receptList)
+        {
+            var json = JsonSerializer.Serialize(receptList, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(_filePath, json);
+        }
+
+        // ... Other methods ...
 }
+
+

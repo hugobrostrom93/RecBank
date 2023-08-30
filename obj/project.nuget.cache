@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ltDjf1wdLPv5QhDPej8mJAHJJHmTJFJnRac+ZwuPv6ffLizKVeOBAYa7Rvc+N9r5EflufJs7yDw6oMAiyu2g8Q==",
+  "success": true,
+  "projectFilePath": "/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/ReceptBank.csproj",
+  "expectedPackageFiles": [
+    "/Users/hugobrostrom/.nuget/packages/microsoft.aspnetcore.authentication.google/7.0.10/microsoft.aspnetcore.authentication.google.7.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}

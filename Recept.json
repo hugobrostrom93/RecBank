@@ -1,27 +1,12 @@
 [
-    {
-        "recept_id": 1,
-        "name": "glass",
-        "ingredients": "Kondenserad mjölk, grädde, vanilj"
-    },
-
-    {
-        "recept_id": 2,
-        "name": "Surkal",
-        "ingredients": "Kål, salt, vatten"
-    },
-
-    {
-        "recept_id": 3,
-        "name": "Burrito",
-        "ingredients": "Tortilla, köttfärs, lök, paprika, majs, bönor, kryddor"
-    },
-
-    {
-        "recept_id": 4,
-        "name": "mjau",
-        "ingredients": "mjau, mjau, mjau"
-    }
-
+  {
+    "recept_id": 1,
+    "name": "glass",
+    "ingredients": "Kondenserad mj\u00F6lk, gr\u00E4dde, vanilj"
+  },
+  {
+    "recept_id": 3,
+    "name": "Burrito",
+    "ingredients": "Tortilla, k\u00F6ttf\u00E4rs, l\u00F6k, paprika, majs, b\u00F6nor, kryddor"
+  }
 ]
-

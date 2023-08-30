@@ -13,4 +13,6 @@ public interface IReceptRepo
 
     List<Recept> GetRecepts();
 
+    void Remove(int id);
+
 }

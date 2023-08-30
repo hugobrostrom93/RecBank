@@ -61,17 +61,22 @@ public class ReceptService : IReceptService
         };
     }
 
-
-    public ReceptDTO Remove(int id)
-    {
-        var recept = _receptRepository.GetReceptById(1);
-        return new ReceptDTO
+        public void Remove(int id)
         {
-            // Recipes.Remove(Recept);
-            // _context.SaveChanges();
-        };
+            // Call the repository's Remove method to remove the recipe
+            _receptRepository.Remove(id);
+        }
 
-    }
+    // public ReceptDTO Remove(int id)
+    // {
+    //     var recept = _receptRepository.GetReceptById(1);
+    //     return new ReceptDTO
+    //     {
+    //         // Recipes.Remove(Recept);
+    //         // _context.SaveChanges();
+    //     };
+
+    // }
     //implement logic for editing recept 
 
     public ReceptDTO Create()

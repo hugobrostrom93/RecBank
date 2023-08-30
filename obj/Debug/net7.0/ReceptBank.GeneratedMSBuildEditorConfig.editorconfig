@@ -1,0 +1,73 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ReceptBank
+build_property.RootNamespace = ReceptBank
+build_property.ProjectDir = /Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Account/SecretInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9TZWNyZXRJbmZvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Recept/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjZXB0L0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Recept/Ingredienser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjZXB0L0luZ3JlZGllbnNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Recept/Recept.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjZXB0L1JlY2VwdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Recept/Remove.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjZXB0L1JlbW92ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Recept/Sök.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjZXB0L1PDtmsuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gkg0yg5te3
