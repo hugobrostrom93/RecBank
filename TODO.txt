@@ -1,0 +1,13 @@
+TODO:
+clear cookies on close
+redirect to action - när man har loggat in så kommer man till ReceptBank
+lägg till authorized decorator på recept controller
+auth authz på program.css
+endpoints - program.cs - search grejs 
+
+model och dto grejs: instructions
+
+unfrastruktur - ReceptRepoJson
+
+
+googla cherry pick - Du kan också ta bort allt från en branch efter en viss commit

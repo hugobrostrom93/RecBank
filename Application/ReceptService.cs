@@ -1,6 +1,8 @@
 
 
 namespace ReceptBank.ApplicationServices;
+
+using System.Reflection.Metadata.Ecma335;
 using ReceptBank.Domain;
 
 public class ReceptService : IReceptService
@@ -11,19 +13,56 @@ public class ReceptService : IReceptService
     {
         _receptRepository = receptRepository;
     }
-
-    public ReceptDTO GetRecepts()
+    
+    public ReceptDTO Edit(int id)
     {
-        // Get a Person object from the repository
-        var recept = _receptRepository.GetReceptById(1);
+        throw new NotImplementedException();
+    }
+
+    public List<ReceptDTO> GetRecepts()
+    {
+        // Get a list of Recept objects from the repository
+        var recepts = _receptRepository.GetRecepts();
+
+        // Create a list of ReceptDTO objects
+        var receptDTOs = new List<ReceptDTO>();
+
+        foreach (var recept in recepts)
+        {
+            var receptDTO = new ReceptDTO
+            {
+                Name = recept.Name,
+                Ingredients = recept.Ingredients,
+                ReceptId = recept.ReceptId
+            };
+
+            receptDTOs.Add(receptDTO);
+        }
+
+        return receptDTOs;
+    }
+
+
+    public ReceptDTO Edit(int id, ReceptDTO updatedRecept)
+    {
+        // Get the original Recept object from the repository
+        var originalRecept = _receptRepository.GetReceptById(id);
+
+        // Update properties of the originalRecept based on updatedRecept
+
+        // Call a method on the repository to save changes
+        _receptRepository.Edit(originalRecept);
+
+        // Return a ReceptDTO representing the updated recipe
         return new ReceptDTO
         {
-            Name = recept.Name,
-            Ingredients = recept.Ingredients
+            Name = originalRecept.Name,
+            Ingredients = originalRecept.Ingredients
         };
     }
 
-    public ReceptDTO Remove(int Id)
+
+    public ReceptDTO Remove(int id)
     {
         var recept = _receptRepository.GetReceptById(1);
         return new ReceptDTO
@@ -31,17 +70,9 @@ public class ReceptService : IReceptService
             // Recipes.Remove(Recept);
             // _context.SaveChanges();
         };
-      
+
     }
-    public ReceptDTO Edit(int Id)
-    {
-        var recept = _receptRepository.GetReceptById(1);
-        return new ReceptDTO
-        {
-            // Recipes.Edit(Recept);
-            // _context.SaveChanges();
-        };
-    }
+    //implement logic for editing recept 
 
     public ReceptDTO Create()
     {
@@ -51,17 +82,17 @@ public class ReceptService : IReceptService
             // Recipes.Remove(Recept);
             // _context.SaveChanges();
         };
-      
+
     }
-    public ReceptDTO GetReceptById(int Id)
+    public ReceptDTO GetReceptById(int id)
     {
-        var recept = _receptRepository.GetReceptById(1);
+        var recept = _receptRepository.GetReceptById(id);
         return new ReceptDTO
         {
             // Recipes.Remove(Recept);
             // _context.SaveChanges();
         };
-      
+
     }
 
 }
