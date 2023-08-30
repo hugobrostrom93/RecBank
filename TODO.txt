@@ -6,3 +6,8 @@ auth authz på program.css
 endpoints - program.cs - search grejs 
 
 model och dto grejs: instructions
+
+unfrastruktur - ReceptRepoJson
+
+
+googla cherry pick - Du kan också ta bort allt från en branch efter en viss commit

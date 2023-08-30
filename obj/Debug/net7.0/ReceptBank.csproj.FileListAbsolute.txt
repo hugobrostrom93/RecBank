@@ -31,7 +31,6 @@ C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\ob
 C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\obj\Debug\net7.0\ref\ReceptBank.dll
 <<<<<<< HEAD
 =======
-C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\bin\Debug\net7.0\Recept.json
 C:\Users\ericr\Documents\FactoryPizza\Grupparbete\ReceptBank\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\ericr\Documents\FactoryPizza\Grupparbete\ReceptBank\bin\Debug\net7.0\appsettings.json
 C:\Users\ericr\Documents\FactoryPizza\Grupparbete\ReceptBank\bin\Debug\net7.0\Recept.json
@@ -99,3 +98,6 @@ C:\Users\henga\CLOUD222\Att Drifta Molnapplikationer\ReceptBank\obj\Debug\net7.0
 C:\Users\henga\CLOUD222\Att Drifta Molnapplikationer\ReceptBank\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll
 C:\Users\henga\CLOUD222\Att Drifta Molnapplikationer\ReceptBank\obj\Debug\net7.0\ReceptBank.csproj.CopyComplete
 >>>>>>> 6768b3a989e9fa8a8b0dddddeec39437d4503360
+C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\obj\Debug\net7.0\ReceptBank.csproj.AssemblyReference.cache
+C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\obj\Debug\net7.0\ReceptBank.csproj.CopyComplete

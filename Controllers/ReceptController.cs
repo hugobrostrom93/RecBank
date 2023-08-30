@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace ReceptBank.Controllers;
 
-[Authorize] // This attribute ensures that only authenticated users can access this action.
+//[Authorize] // This attribute ensures that only authenticated users can access this action.
 
 public class ReceptController : Controller
 

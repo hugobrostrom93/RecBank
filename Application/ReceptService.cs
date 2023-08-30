@@ -32,7 +32,8 @@ public class ReceptService : IReceptService
             var receptDTO = new ReceptDTO
             {
                 Name = recept.Name,
-                Ingredients = recept.Ingredients
+                Ingredients = recept.Ingredients,
+                ReceptId = recept.ReceptId
             };
 
             receptDTOs.Add(receptDTO);

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rTtb1XvygE4aF23JybFsuZpYPNHbBlpUFuCJUbi0EdJ9ZLbx59KwNZ6ycnxqkKStoj+R0KbZWCJEaW8WF7ceKg==",
+  "dgSpecHash": "/TBCTsSI/z35BBNpAKSvQBUZyMHC8Gayei3MtTCFQlvzC0Oa0Q/yCYXSurj6TmJHwUudcyZJV1bB/fSBkdIlUQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\henga\\CLOUD222\\Att Drifta Molnapplikationer\\ReceptBank\\ReceptBank.csproj",
+  "projectFilePath": "C:\\Users\\89hanmad\\source\\repos\\Att drifta molnapplikationer\\Recept\\ReceptBank\\ReceptBank.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\henga\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\7.0.10\\microsoft.aspnetcore.authentication.google.7.0.10.nupkg.sha512"
+    "C:\\Users\\89hanmad\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\7.0.10\\microsoft.aspnetcore.authentication.google.7.0.10.nupkg.sha512"
   ],
   "logs": []
 }

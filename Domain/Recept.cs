@@ -49,10 +49,9 @@ public class Recept
         }
     }
 
-
     public int ReceptId
     {
-        get => ReceptId;
+        get => _receptID;
         private set => _receptID = value;
 
     }

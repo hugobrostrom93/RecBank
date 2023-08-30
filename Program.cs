@@ -9,13 +9,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IReceptService, ReceptService>();
 builder.Services.AddScoped<IReceptRepo, ReceptRepoJson>();
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-.AddCookie()
-.AddGoogle(options =>
-{
-options.ClientId = "944326170280-trel9bml87osid1e7qqm1e51jpanc9ja.apps.googleusercontent.com";
-options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"] ?? throw new ArgumentNullException("Authentication:Google:ClientSecret");
-});
+// builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+// .AddCookie()
+// .AddGoogle(options =>
+// {
+// options.ClientId = "944326170280-trel9bml87osid1e7qqm1e51jpanc9ja.apps.googleusercontent.com";
+// options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"] ?? throw new ArgumentNullException("Authentication:Google:ClientSecret");
+// });
 
 //Lägg till authentication - om man inte är authentiserad så stöter man på en challange, för att få den authentiserad. 
 
