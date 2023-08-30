@@ -63,6 +63,7 @@ C:\Users\ericr\Documents\FactoryPizza\Grupparbete\ReceptBank\obj\Debug\net7.0\re
 C:\Users\ericr\Documents\FactoryPizza\Grupparbete\ReceptBank\obj\Debug\net7.0\ReceptBank.pdb
 C:\Users\ericr\Documents\FactoryPizza\Grupparbete\ReceptBank\obj\Debug\net7.0\ReceptBank.genruntimeconfig.cache
 C:\Users\ericr\Documents\FactoryPizza\Grupparbete\ReceptBank\obj\Debug\net7.0\ref\ReceptBank.dll
+<<<<<<< HEAD
 C:\Users\henga\CLOUD222\Att Drifta Molnapplikationer\ReceptBank\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\henga\CLOUD222\Att Drifta Molnapplikationer\ReceptBank\bin\Debug\net7.0\appsettings.json
 C:\Users\henga\CLOUD222\Att Drifta Molnapplikationer\ReceptBank\bin\Debug\net7.0\Recept.json
@@ -101,3 +102,16 @@ C:\Users\henga\CLOUD222\Att Drifta Molnapplikationer\ReceptBank\obj\Debug\net7.0
 C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.Google.dll
 C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\obj\Debug\net7.0\ReceptBank.csproj.AssemblyReference.cache
 C:\Users\89hanmad\source\repos\Att drifta molnapplikationer\Recept\ReceptBank\obj\Debug\net7.0\ReceptBank.csproj.CopyComplete
+=======
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.csproj.AssemblyReference.cache
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.AssemblyInfoInputs.cache
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.AssemblyInfo.cs
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.csproj.CoreCompileInputs.cache
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.RazorAssemblyInfo.cache
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.RazorAssemblyInfo.cs
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.dll
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\refint\ReceptBank.dll
+C:\Users\78caratz\Documents\Clo22dev\ReceptBank\obj\Debug\net7.0\ReceptBank.pdb
+>>>>>>> main
