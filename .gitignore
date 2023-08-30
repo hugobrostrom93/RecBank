@@ -1,0 +1,12 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Node.js modules and logs
+node_modules/
+npm-debug.log*
+
+# Ignore Python virtual environment
+venv/
+
+# Ignore Visual Studio Code settings
+.vscode/
