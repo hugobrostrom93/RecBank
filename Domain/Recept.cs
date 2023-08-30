@@ -13,6 +13,15 @@ public class Recept
 {
     private string _name = string.Empty;
     private string _ingredients = string.Empty;
+    private int _receptID;
+
+
+    public Recept(string name, string ingredients, int id)
+    {
+        Name = name;
+        Ingredients = ingredients;
+        ReceptId = id;
+    }
 
     public string Name
     {
@@ -29,21 +38,22 @@ public class Recept
 
     public string Ingredients
     {
-          get => _ingredients;
+        get => _ingredients;
         private set
         {
-            if (string.IsNullOrEmpty(value) || !Regex.IsMatch(value, @"^[a-zA-Z]+( [a-zA-Z]+)*$"))
+            /*if (string.IsNullOrEmpty(value) || !Regex.IsMatch(value, @"^[a-zA-Z]+( [a-zA-Z]+)*$"))
             {
                 throw new ArgumentException("Name must be letters only and may contain one space character between names.");
-            }
+            }*/
             _ingredients = value;
         }
     }
 
-    public Recept (string name, string ingredients)
+    public int ReceptId
     {
-        Name = name;
-        Ingredients = ingredients;
+        get => _receptID;
+        private set => _receptID = value;
+
     }
 }
 

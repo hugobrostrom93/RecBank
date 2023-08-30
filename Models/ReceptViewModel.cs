@@ -18,6 +18,6 @@ public class ReceptViewModel
     public string Name {get; set;}
 
     [Required]
-    [RegularExpression(@"^[a-zA-Z]+( [a-zA-Z]+)*$", ErrorMessage = "Use letters only and only one space between names, please")]
+    //[RegularExpression(@"^[a-zA-Z]+( [a-zA-Z]+)*$", ErrorMessage = "Use letters only and only one space between names, please")]
     public string Ingredients {get; set;}
 }
