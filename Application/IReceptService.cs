@@ -12,7 +12,7 @@ public interface IReceptService
 
     ReceptDTO Edit(int id);
 
-    ReceptDTO Create();
+    ReceptDTO Create(ReceptDTO newRecept);
     //skapar id
 
     ReceptDTO GetReceptById(int id);

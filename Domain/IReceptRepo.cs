@@ -15,4 +15,7 @@ public interface IReceptRepo
 
     void Remove(int id);
 
+    Recept Create(Recept newRecept);
+
+    Recept Add(string name, string ingredients);
 }

@@ -8,10 +8,5 @@
     "recept_id": 3,
     "name": "Burrito",
     "ingredients": "Tortilla, k\u00F6ttf\u00E4rs, l\u00F6k, paprika, majs, b\u00F6nor, kryddor"
-  },
-  {
-    "recept_id": 4,
-    "name": "mjau",
-    "ingredients": "mjau, mjau, mjau"
   }
 ]

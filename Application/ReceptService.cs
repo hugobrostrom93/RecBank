@@ -79,16 +79,23 @@ public class ReceptService : IReceptService
     // }
     //implement logic for editing recept 
 
-    public ReceptDTO Create()
-    {
-        var recept = _receptRepository.GetReceptById(1);
-        return new ReceptDTO
-        {
-            // Recipes.Remove(Recept);
-            // _context.SaveChanges();
-        };
+public ReceptDTO Create(ReceptDTO newRecept)
+{
+    // Call the repository's method to add the new recipe
+    var addedRecipe = _receptRepository.Add(newRecept.Name, newRecept.Ingredients);
 
-    }
+    // Assuming _receptRepository.Add returns the newly added Recept object,
+    // you can then create a ReceptDTO from it and return it
+    return new ReceptDTO
+    {
+        Name = addedRecipe.Name,
+        Ingredients = addedRecipe.Ingredients,
+        ReceptId = addedRecipe.ReceptId
+    };
+}
+
+
+
     public ReceptDTO GetReceptById(int id)
     {
         var recept = _receptRepository.GetReceptById(id);
