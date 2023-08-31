@@ -14,16 +14,17 @@
     </tbody>    
 </table>
 
-@foreach (var Recept in Model)
-        {
-            <tr>
-                <td><a asp-asp-controller="Recept" asp-action="Edit" >Edit</a><td>
-                //<td><a asp-asp-controller="Recept" asp-action="Remove" >Remove</a><td>
-                <button class="hover-effect"
-                style="margin-bottom: 7px; 
-                border-radius: 7px;
-                background-color: pink">@Recept.Name</button><br>
-                <!--<td>@Recept.Ingredients</td> -->
-           
-            </tr>
-        }
+    @foreach (var recept in Model)
+{
+    <tr>
+        <td>
+            <form method="get" action="@Url.Action("Edit")">
+
+                <input type="hidden" name="id" value="@recept.ReceptId" />
+                <button type="submit" class="hover-effect" style="margin-bottom: 7px; border-radius: 7px; background-color: pink">
+                    @recept.Name
+                </button>
+            </form>
+        </td>
+    </tr>
+}

@@ -29,7 +29,7 @@ public class ReceptService : IReceptService
 
         foreach (var recept in recepts)
         {
-            var receptDTO = new ReceptDTO
+            var receptDTO = new ReceptDTO(recept.Name, recept.Ingredients, recept.ReceptId)
             {
                 Name = recept.Name,
                 Ingredients = recept.Ingredients,
@@ -46,18 +46,20 @@ public class ReceptService : IReceptService
     public ReceptDTO Edit(int id, ReceptDTO updatedRecept)
     {
         // Get the original Recept object from the repository
-        var originalRecept = _receptRepository.GetReceptById(id);
+        var recept = _receptRepository.GetReceptById(id);
 
         // Update properties of the originalRecept based on updatedRecept
 
         // Call a method on the repository to save changes
-        _receptRepository.Edit(originalRecept);
+        
+        //_receptRepository.Edit(originalRecept);
 
         // Return a ReceptDTO representing the updated recipe
-        return new ReceptDTO
+        return new ReceptDTO(recept.Name, recept.Ingredients, recept.ReceptId)
         {
-            Name = originalRecept.Name,
-            Ingredients = originalRecept.Ingredients
+            Name = recept.Name,
+            Ingredients = recept.Ingredients,
+            ReceptId = recept.ReceptId
         };
     }
 
@@ -65,7 +67,7 @@ public class ReceptService : IReceptService
     public ReceptDTO Remove(int id)
     {
         var recept = _receptRepository.GetReceptById(1);
-        return new ReceptDTO
+        return new ReceptDTO(recept.Name, recept.Ingredients, recept.ReceptId)
         {
             // Recipes.Remove(Recept);
             // _context.SaveChanges();
@@ -77,7 +79,7 @@ public class ReceptService : IReceptService
     public ReceptDTO Create()
     {
         var recept = _receptRepository.GetReceptById(1);
-        return new ReceptDTO
+        return new ReceptDTO(recept.Name, recept.Ingredients, recept.ReceptId)
         {
             // Recipes.Remove(Recept);
             // _context.SaveChanges();
@@ -87,7 +89,11 @@ public class ReceptService : IReceptService
     public ReceptDTO GetReceptById(int id)
     {
         var recept = _receptRepository.GetReceptById(id);
-        return new ReceptDTO
+        return new ReceptDTO(recept.Name, recept.Ingredients, recept.ReceptId)
+        {
+            // Recipes.Remove(Recept);
+            // _context.SaveChanges();
+        };
         {
             // Recipes.Remove(Recept);
             // _context.SaveChanges();

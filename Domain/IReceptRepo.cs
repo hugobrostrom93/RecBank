@@ -2,15 +2,15 @@
 //sen kommer massa andra attribut.
 //man måste hitta den i databasen
 //skillnad på entitet och value object - det senare har inte id. tex röd, eller grön. entity har id. 
+using ReceptBank.ApplicationServices;
 
 namespace ReceptBank.Domain;
 
 public interface IReceptRepo
 {
-    Recept GetReceptById(int id);
+    ReceptDTO GetReceptById(int id);
 
-    Recept Edit(Recept updatedRecept);
+    Recept Edit(ReceptDTO updatedRecept);
 
     List<Recept> GetRecepts();
-
 }

@@ -2,6 +2,7 @@
 
 namespace ReceptBank.Infrastructure;
 
+using ReceptBank.ApplicationServices;
 using ReceptBank.Domain;
 
 //ärver från Domain IReceptRepo
@@ -19,10 +20,15 @@ public class ReceptRepo : IReceptRepo
         throw new NotImplementedException();
     }
 
-    public Recept GetReceptById(int id)
+    public Recept Edit(ReceptDTO updatedRecept)
+    {
+        throw new NotImplementedException();
+    }
+
+    public ReceptDTO GetReceptById(int id)
     {
         //TODO skriv rätt
-        return new Recept("mocka", "mocka2", 2); // Mock implementation
+        return new ReceptDTO("mocka", "mocka2", 2); // Mock implementation
     }   
     
       public List<Recept> GetRecepts()
@@ -36,5 +42,4 @@ public class ReceptRepo : IReceptRepo
 
             return recipes;
         }
-}
-
+};

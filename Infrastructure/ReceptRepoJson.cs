@@ -14,23 +14,27 @@ public class ReceptRepoJson : IReceptRepo
 {
     private readonly string _filePath = "Recept.json";
 
-   
-    public Recept Edit(Recept originalRecept)
+    public Recept Edit(ReceptDTO updatedRecept)
     {
-        throw new NotImplementedException();
+        // Get all recepts from json repository file and find a recept using id and update it
+        var recepts = ReadFromFile();
+        var recept = recepts.Find(p => p.ReceptId == updatedRecept.ReceptId);
+        recept.Name = updatedRecept.Name;
+        recept.Ingredients = updatedRecept.Ingredients;
+        // Save the updated recepts to json repository file
+        var json = JsonSerializer.Serialize(recepts);
+        File.WriteAllText(_filePath, json);
+        return new Recept(recept.Name, recept.Ingredients, recept.ReceptId);
     }
 
-    public Recept Edit()
-    {
-        throw new NotImplementedException();
-    }
-
-    public Recept GetReceptById(int id)
+    public ReceptDTO GetReceptById(int id)
     {
         var recept = ReadFromFile();
         var receptData = recept.Find(p => p.ReceptId == id);
+        var receptReturn = new ReceptDTO(receptData.Name, receptData.Ingredients, receptData.ReceptId);
 
-        return receptData != null ? new Recept(receptData.Name, receptData.Ingredients, receptData.ReceptId) : null;
+        return receptReturn;
+        //!= null ? new Recept(receptData.Name, receptData.Ingredients, receptData.ReceptId) : null;
         //den här raden som vi tar en data entitet och skapar till en domain entitet, different types?
     }
 
