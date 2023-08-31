@@ -60,4 +60,91 @@ public class ReceptRepoJson : IReceptRepo
         return new List<ReceptEntityJson>();
     }
 
+    public void Remove(int id)
+    {
+        var receptList = ReadFromFile();
+
+        int index = receptList.FindIndex(receptData => receptData.ReceptId == id);
+
+        if (index != -1)
+        {
+            receptList.RemoveAt(index);
+            SaveToFile(receptList);
+        }
+    }
+
+        private void SaveToFile(List<ReceptEntityJson> receptList)
+        {
+            var json = JsonSerializer.Serialize(receptList, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(_filePath, json);
+        }
+
+            public Recept Create(Recept newRecept)
+        {
+            var receptList = ReadFromFile();
+
+            // Create a new ReceptEntityJson object based on the provided Recept
+            var newReceptEntity = new ReceptEntityJson
+            {
+                ReceptId = GenerateNewId(), // Assuming you have a method to generate a new unique ID
+                Name = newRecept.Name,
+                Ingredients = newRecept.Ingredients
+            };
+
+            // Add the new ReceptEntityJson to the list
+            receptList.Add(newReceptEntity);
+
+            // Save the updated list back to the file
+            SaveToFile(receptList);
+
+            // Return the created Recept object (you might need to map ReceptEntityJson to Recept)
+            return new Recept(newReceptEntity.Name, newReceptEntity.Ingredients, newReceptEntity.ReceptId);
+        }
+
+        private int GenerateNewId()
+        {
+            var receptList = ReadFromFile();
+
+            // Find the highest existing ID
+            int highestId = 0;
+            foreach (var receptEntity in receptList)
+            {
+                if (receptEntity.ReceptId > highestId)
+                {
+                    highestId = receptEntity.ReceptId;
+                }
+            }
+
+            // Increment the highest ID to generate a new unique ID
+            int newUniqueId = highestId + 1;
+
+            return newUniqueId;
+        }
+
+public Recept Add(string name, string ingredients)
+    {
+        var receptList = ReadFromFile();
+
+        // Generate a new unique ID
+        int newId = GenerateNewId();
+
+        // Create a new ReceptEntityJson object based on the provided parameters
+        var newReceptEntity = new ReceptEntityJson
+        {
+            ReceptId = newId,
+            Name = name,
+            Ingredients = ingredients
+        };
+
+        // Add the new ReceptEntityJson to the list
+        receptList.Add(newReceptEntity);
+
+        // Save the updated list back to the file
+        SaveToFile(receptList);
+
+        // Return the created Recept object (you might need to map ReceptEntityJson to Recept)
+        return new Recept(newReceptEntity.Name, newReceptEntity.Ingredients, newReceptEntity.ReceptId);
+    }
 }
+
+

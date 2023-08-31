@@ -9,69 +9,69 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ReceptBank
 build_property.RootNamespace = ReceptBank
-build_property.ProjectDir = C:\Users\ericr\Documents\CLO22-HT\Edit\ReceptBank\
+build_property.ProjectDir = /Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ericr\Documents\CLO22-HT\Edit\ReceptBank
+build_property.MSBuildProjectDirectory = /Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ericr/Documents/CLO22-HT/Edit/ReceptBank/Views/Account/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ericr/Documents/CLO22-HT/Edit/ReceptBank/Views/Account/SecretInfo.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTZWNyZXRJbmZvLmNzaHRtbA==
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Account/SecretInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9TZWNyZXRJbmZvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ericr/Documents/CLO22-HT/Edit/ReceptBank/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ericr/Documents/CLO22-HT/Edit/ReceptBank/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ericr/Documents/CLO22-HT/Edit/ReceptBank/Views/Recept/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0XEVkaXQuY3NodG1s
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Recept/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjZXB0L0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ericr/Documents/CLO22-HT/Edit/ReceptBank/Views/Recept/Edited.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0XEVkaXRlZC5jc2h0bWw=
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Recept/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjZXB0L0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ericr/Documents/CLO22-HT/Edit/ReceptBank/Views/Recept/Ingredienser.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0XEluZ3JlZGllbnNlci5jc2h0bWw=
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Recept/Ingredienser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjZXB0L0luZ3JlZGllbnNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ericr/Documents/CLO22-HT/Edit/ReceptBank/Views/Recept/Recept.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0XFJlY2VwdC5jc2h0bWw=
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Recept/Recept.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjZXB0L1JlY2VwdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ericr/Documents/CLO22-HT/Edit/ReceptBank/Views/Recept/Remove.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0XFJlbW92ZS5jc2h0bWw=
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Recept/Remove.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjZXB0L1JlbW92ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ericr/Documents/CLO22-HT/Edit/ReceptBank/Views/Recept/Sök.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVjZXB0XFPDtmsuY3NodG1s
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Recept/Sök.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmVjZXB0L1PDtmsuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ericr/Documents/CLO22-HT/Edit/ReceptBank/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ericr/Documents/CLO22-HT/Edit/ReceptBank/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ericr/Documents/CLO22-HT/Edit/ReceptBank/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ericr/Documents/CLO22-HT/Edit/ReceptBank/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ericr/Documents/CLO22-HT/Edit/ReceptBank/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-5k70b14rm9
+[/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gkg0yg5te3

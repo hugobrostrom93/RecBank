@@ -2,29 +2,28 @@
 
 <h2>Recept List</h2>
 
+<a asp-controller="Recept" asp-action="Create" class="btn btn-primary">Create New</a>
+
 <table class="table">
     <thead>
         <tr>
             <th>Recept</th>
-            <!-- <th>Ingredients</th> -->
+            <th>Actions</th>
         </tr>
     </thead>
     <tbody>
-        
+        @foreach (var Recept in Model)
+        {
+            <tr>
+                <td>@Recept.Name</td>
+                <td>
+                    <form method="post" asp-controller="Recept" asp-action="Remove">
+                        <input type="hidden" name="id" value="@Recept.ReceptId" />
+                        <button class="hover-effect" style="margin-bottom: 7px; border-radius: 7px; background-color: pink">Remove</button>
+                    </form>
+                    <a asp-controller="Recept" asp-action="Edit">Edit</a>
+                </td>
+            </tr>
+        }
     </tbody>    
 </table>
-
-    @foreach (var recept in Model)
-{
-    <tr>
-        <td>
-            <form method="get" action="@Url.Action("Edit")">
-
-                <input type="hidden" name="id" value="@recept.ReceptId" />
-                <button type="submit" class="hover-effect" style="margin-bottom: 7px; border-radius: 7px; background-color: pink">
-                    @recept.Name
-                </button>
-            </form>
-        </td>
-    </tr>
-}

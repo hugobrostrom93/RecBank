@@ -13,4 +13,10 @@ public interface IReceptRepo
     Recept Edit(ReceptDTO updatedRecept);
 
     List<Recept> GetRecepts();
+
+    void Remove(int id);
+
+    Recept Create(Recept newRecept);
+
+    Recept Add(string name, string ingredients);
 }
