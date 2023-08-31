@@ -82,6 +82,48 @@ public class ReceptController : Controller
         return View();
     }
 
+    [HttpPost]
+    public IActionResult Remove(int id)
+    {
+        // Call the service to remove the recipe
+        _receptService.Remove(id);
+
+        // Redirect back to the recipe list view
+        return View("Remove");
+    }
+
+    [HttpGet]
+    public IActionResult Create()
+        {
+            // Create an empty ReceptViewModel for the creation form
+            var newReceptViewModel = new ReceptViewModel();
+
+            return View(newReceptViewModel);
+        }
+
+        [HttpPost]
+        public IActionResult Create(ReceptViewModel newReceptViewModel)
+        {
+            if (ModelState.IsValid)
+            {
+                // Map the data from the ViewModel to a ReceptDTO
+                var newReceptDTO = new ReceptDTO(newReceptViewModel.Name, newReceptViewModel.Ingredients, newReceptViewModel.ReceptId)
+                {
+                    Name = newReceptViewModel.Name,
+                    Ingredients = newReceptViewModel.Ingredients
+                };
+
+                // Call the service to create a new recipe
+                _receptService.Create(newReceptDTO);
+
+                // Redirect back to the recipe list view after creation
+                return RedirectToAction("Recept");
+            }
+
+            // If the model state is not valid, return back to the creation form with validation errors
+            return View(newReceptViewModel);
+        }
+
 }
 
 
@@ -104,14 +146,5 @@ public class ReceptController : Controller
 
 //     //return View(recepts);
 //     //RedirectToAction(Recept);
-// }
-
-
-
-// [HttpPost]
-// public IActionResult Remove(int id)
-// {
-//     var remove = _receptService.Remove(id);
-//     return View(Recept); // Redirect back to the recipe list
 // }
 

@@ -5,12 +5,14 @@ public interface IReceptService
     List<ReceptDTO> GetRecepts();
     //plural - returvärde lista
 
+    //ReceptDTO Remove(int id);
     ReceptDTO Remove(int id);
+
     //ngt returvärde som visar successs eller ngt
 
-    ReceptDTO Edit(int id);
+    ReceptDTO Edit(int id, ReceptDTO updatedRecept);
 
-    ReceptDTO Create();
+    ReceptDTO Create(ReceptDTO newRecept);
     //skapar id
 
     ReceptDTO GetReceptById(int id);
