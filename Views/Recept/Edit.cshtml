@@ -1,24 +1,11 @@
 @model ReceptBank.Models.ReceptViewModel
-@using (Html.BeginForm())
-{
-    @Html.HiddenFor(model => model.ReceptId) <!-- Include a hidden field to store the recipe ID -->
 
-    <div>
-        <td>@Model.ReceptId</td>
-        <td>@Model.Name</td>
-        @Html.LabelFor(model => model.Name)
-        @Html.TextBoxFor(model => model.Name)
-    </div>
+<form method="post" action="@Url.Action("SubmitEdit")">
+    <input type="hidden" name="id" value="@Model.ReceptId" />
+    <input type="text" name="name" value="@Model.Name" />
+    <input type="text" name="ingredients" value="@Model.Ingredients" />
+    <button type="submit" asp-action="SubmitEdit">Submit</button>
+</form>
 
-    <div>
-
-        <td>@Model.Ingredients</td>
-        @Html.LabelFor(model => model.Ingredients)
-        @Html.TextAreaFor(model => model.Ingredients)
-    </div>
-
-    <!-- Add more fields for other recipe details -->
-
-    <button type="submit">Save Changes</button>
-}
+<!-- Add more fields for other recipe details -->
 

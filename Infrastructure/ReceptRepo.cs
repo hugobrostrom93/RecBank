@@ -2,7 +2,8 @@
 
 // namespace ReceptBank.Infrastructure;
 
-// using ReceptBank.Domain;
+using ReceptBank.ApplicationServices;
+using ReceptBank.Domain;
 
 // //ärver från Domain IReceptRepo
 // //konvertera saker annars kan den inte få ut kontraktet
@@ -19,11 +20,16 @@
 //         throw new NotImplementedException();
 //     }
 
-//     public Recept GetReceptById(int id)
-//     {
-//         //TODO skriv rätt
-//         return new Recept("mocka", "mocka2", 2); // Mock implementation
-//     }   
+    public Recept Edit(ReceptDTO updatedRecept)
+    {
+        throw new NotImplementedException();
+    }
+
+    public ReceptDTO GetReceptById(int id)
+    {
+        //TODO skriv rätt
+        return new ReceptDTO("mocka", "mocka2", 2); // Mock implementation
+    }   
     
 //       public List<Recept> GetRecepts()
 //         {
@@ -34,9 +40,6 @@
 //             recipes.Add(new Recept("Recipe 2", "Ingredient 3, Ingredient 4", 2));
 //             recipes.Add(new Recept("Recipe 3", "Ingredient 5, Ingredient 6", 3));
 
-//             return recipes;
-//         }
-
-    
-// }
-
+            return recipes;
+        }
+};

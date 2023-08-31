@@ -10,6 +10,7 @@ using ReceptBank.ApplicationServices;
 using ReceptBank.Models;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Authorization;
+using ReceptBank.Infrastructure;
 
 namespace ReceptBank.Controllers;
 
@@ -64,6 +65,20 @@ public class ReceptController : Controller
         };
 
         return View(editRecept);
+    }
+
+    [HttpPost]
+    public IActionResult SubmitEdit(int id, string name, string ingredients){
+        
+        var input = new ReceptDTO(name, ingredients, id);
+        var returnItem = new ReceptRepoJson();
+        returnItem.Edit(input);
+        return RedirectToAction("Edited");
+    }
+
+    public ActionResult Edited()
+    {
+        return View();
     }
 
     [HttpPost]
