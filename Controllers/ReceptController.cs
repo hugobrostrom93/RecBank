@@ -25,7 +25,8 @@ public class ReceptController : Controller
     {
         _receptService = receptService;
     }
-
+    
+    [Authorize]
     public IActionResult Recept()
     {
         List<ReceptDTO> receptDTOs = _receptService.GetRecepts();

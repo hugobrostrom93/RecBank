@@ -1,10 +1,11 @@
 
+using System.Reflection.Metadata.Ecma335;
+using Microsoft.AspNetCore.Authorization;
+using ReceptBank.Domain;
 
 namespace ReceptBank.ApplicationServices;
 
-using System.Reflection.Metadata.Ecma335;
-using ReceptBank.Domain;
-
+[Authorize]
 public class ReceptService : IReceptService
 {
     private readonly IReceptRepo _receptRepository;

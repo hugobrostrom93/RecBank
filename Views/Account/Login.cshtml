@@ -4,25 +4,24 @@
     <!-- cross site forgery script, när man skickar formulär så måste man ha med token från sidan den säger sig va -->
     <!-- mjumjumjaauauuu kommer kanske per automatik, men bra att vara explicit, finns i account controller också -->
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-    <div>
-        <label asp-for="Username">Username:</label>
-        <input type="text" id="Username" asp-for="Username" required />
-        <span asp-validation-for="Username" class="text-danger"></span>
-    </div>
-    <div>
-        <label asp-for="Password">Password:</label>
-        <input type="password" id="Password" asp-for="Password" required />
-        <!-- type password = ****** -->
+<div>
+<label asp-for="Username">Username:</label>
+<input type="text" id="Username" asp-for="Username" required />
+<span asp-validation-for="Username" class="text-danger"></span>
+</div>
+<div>
+<label asp-for="Password">Password:</label>
+<input type="password" id="Password" asp-for="Password" required />
+    <!-- type password = ****** -->
 
-        <span asp-validation-for="Password" class="text-danger"></span>
-    </div>
-    <div>
-        <button type="submit">Login</button>
-    </div>
+<span asp-validation-for="Password" class="text-danger"></span>
+</div>
+<div>
+<button type="submit">Login</button>
+</div>
 </form>
 @section Scripts {
-    @{
-        await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
 <a href="@Url.Action("GoogleLogin", "Account")" class="btn btn-primary">Login with Google</a>
+<a href="@Url.Action("CognitoLogin", "Account")" class="btn btn-primary" >Login with Cognito</a>
