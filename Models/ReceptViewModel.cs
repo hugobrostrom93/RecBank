@@ -2,6 +2,7 @@
 //specifik roll mellan view och controller. 
 //inte bara en modell, en DTO som transporterar data mellan model och controller.
 //gjord för datan vi vill presentera utåt
+//hej
 
 using System.Security.Cryptography.X509Certificates;
 using System.ComponentModel.DataAnnotations;
@@ -14,10 +15,10 @@ public class ReceptViewModel
     public int ReceptId {get; set;}
 
     [Required]
-    [RegularExpression(@"^[a-zA-Z]+( [a-zA-Z]+)*$", ErrorMessage = "Use letters only and only one space between names, please")]
-    public string Name {get; set;}
+    [RegularExpression(@"^[a-zA-ZåäöÅÄÖ]+( [a-zA-ZåäöÅÄÖ]+)*$", ErrorMessage = "Use letters only and only one space between words")]
+    public string Name { get; set; }
 
     [Required]
-    //[RegularExpression(@"^[a-zA-Z]+( [a-zA-Z]+)*$", ErrorMessage = "Use letters only and only one space between names, please")]
-    public string Ingredients {get; set;}
+    [RegularExpression(@"^[a-zA-ZåäöÅÄÖ,0-9]+( [a-zA-ZåäöÅÄÖ,0-9]+)*$", ErrorMessage = "Use letters and numbers only and only one space between words")]
+    public string Ingredients { get; set; }
 }
