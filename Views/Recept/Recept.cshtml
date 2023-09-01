@@ -15,7 +15,11 @@
         @foreach (var Recept in Model)
         {
             <tr>
-                <td><button type="submit" class="hover-effect" style="margin-bottom: 7px; border-radius: 7px; background-color: rgb(161, 161, 226)">@Recept.Name</button>
+                <td>
+                   <form method="post" asp-controller="Recept" asp-action="Ingredienser">
+                        <input type="hidden" name="id" value="@Recept.ReceptId" />
+                       <button type="submit" class="hover-effect" style="margin-bottom: 7px; border-radius: 7px; background-color: rgb(161, 161, 226)">@Recept.Name</button>
+                    </form>
                 <td>
                     <form method="post" asp-controller="Recept" asp-action="Remove">
                         <input type="hidden" name="id" value="@Recept.ReceptId" />

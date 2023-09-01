@@ -1,4 +1,4 @@
-@model IEnumerable<ReceptBank.Models.ReceptViewModel>
+@model ReceptBank.Models.ReceptViewModel
 
 <h2>Recept List</h2>
 
@@ -10,17 +10,12 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var Recept in Model)
-        {
+       
             <tr>
-                <td>@Recept.ReceptId</td>
-                <td>@Recept.Name</td>
-                <td>@Recept.Ingredients</td>
+                <td>@Model.Name</td>
+                <td>@Model.Ingredients</td>
             </tr>
-        }
+        
     </tbody>
 </table>
-
-
-
 

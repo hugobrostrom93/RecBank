@@ -11,6 +11,7 @@ using ReceptBank.Models;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Authorization;
 using ReceptBank.Infrastructure;
+using Microsoft.VisualBasic;
 
 namespace ReceptBank.Controllers;
 
@@ -25,7 +26,7 @@ public class ReceptController : Controller
     {
         _receptService = receptService;
     }
-    
+
     [Authorize]
     public IActionResult Recept()
     {
@@ -69,8 +70,9 @@ public class ReceptController : Controller
     }
 
     [HttpPost]
-    public IActionResult SubmitEdit(int id, string name, string ingredients){
-        
+    public IActionResult SubmitEdit(int id, string name, string ingredients)
+    {
+
         var input = new ReceptDTO(name, ingredients, id);
         var returnItem = new ReceptRepoJson();
         returnItem.Edit(input);
@@ -94,57 +96,59 @@ public class ReceptController : Controller
 
     [HttpGet]
     public IActionResult Create()
-        {
-            // Create an empty ReceptViewModel for the creation form
-            var newReceptViewModel = new ReceptViewModel();
+    {
+        // Create an empty ReceptViewModel for the creation form
+        var newReceptViewModel = new ReceptViewModel();
 
-            return View(newReceptViewModel);
-        }
+        return View(newReceptViewModel);
+    }
 
-        [HttpPost]
-        public IActionResult Create(ReceptViewModel newReceptViewModel)
+    [HttpPost]
+    public IActionResult Create(ReceptViewModel newReceptViewModel)
+    {
+        if (ModelState.IsValid)
         {
-            if (ModelState.IsValid)
+            // Map the data from the ViewModel to a ReceptDTO
+            var newReceptDTO = new ReceptDTO(newReceptViewModel.Name, newReceptViewModel.Ingredients, newReceptViewModel.ReceptId)
             {
-                // Map the data from the ViewModel to a ReceptDTO
-                var newReceptDTO = new ReceptDTO(newReceptViewModel.Name, newReceptViewModel.Ingredients, newReceptViewModel.ReceptId)
-                {
-                    Name = newReceptViewModel.Name,
-                    Ingredients = newReceptViewModel.Ingredients
-                };
+                Name = newReceptViewModel.Name,
+                Ingredients = newReceptViewModel.Ingredients
+            };
 
-                // Call the service to create a new recipe
-                _receptService.Create(newReceptDTO);
+            // Call the service to create a new recipe
+            _receptService.Create(newReceptDTO);
 
-                // Redirect back to the recipe list view after creation
-                return RedirectToAction("Recept");
-            }
-
-            // If the model state is not valid, return back to the creation form with validation errors
-            return View(newReceptViewModel);
+            // Redirect back to the recipe list view after creation
+            return RedirectToAction("Recept");
         }
+
+        // If the model state is not valid, return back to the creation form with validation errors
+        return View(newReceptViewModel);
+    }
+
+    // [HttpPost]
+    // public IActionResult Ingredienser(int id)
+    // {
+    //     ReceptDTO receptDTO = _receptService.GetReceptById(id);
+    //     ReceptViewModel information = new ReceptViewModel();
+
+    //     return View(information);
+    // }
+    [HttpPost]
+    public IActionResult Ingredienser(int id)
+    {
+        ReceptDTO receptDTO = _receptService.GetReceptById(id);
+        ReceptViewModel information = new ReceptViewModel
+        {
+            ReceptId = receptDTO.ReceptId,
+            Name = receptDTO.Name,
+            Ingredients = receptDTO.Ingredients
+        };
+
+        return View(information);
+    }
 
 }
 
 
-// [HttpPost]
-// public IActionResult Ingredienser(int id)
-// {
-//     List<ReceptDTO> receptDTOs = _receptService.GetReceptById(id);
-//     List<ReceptViewModel> recepts = new List<ReceptViewModel>();
-
-//     foreach (var receptDTO in receptDTOs)
-//     {
-//         var item = new ReceptViewModel
-//         {
-//             id = receptDTO.ReceptId,
-//             Ingredients = receptDTO.Ingredients,
-//             var edit = _receptService.Edit(id)
-//         };
-//         recepts.Add(item);
-//     }
-
-//     //return View(recepts);
-//     //RedirectToAction(Recept);
-// }
 
