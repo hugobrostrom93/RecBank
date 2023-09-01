@@ -2,6 +2,7 @@
 //specifik roll mellan view och controller. 
 //inte bara en modell, en DTO som transporterar data mellan model och controller.
 //gjord för datan vi vill presentera utåt
+//hej
 
 using System.Security.Cryptography.X509Certificates;
 using System.ComponentModel.DataAnnotations;
