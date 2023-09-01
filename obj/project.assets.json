@@ -447,24 +447,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ericr\\.nuget\\packages\\": {}
+    "/Users/hugobrostrom/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ericr\\Documents\\CLO22-HT\\Edit\\ReceptBank\\ReceptBank.csproj",
+      "projectUniqueName": "/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/ReceptBank.csproj",
       "projectName": "ReceptBank",
-      "projectPath": "C:\\Users\\ericr\\Documents\\CLO22-HT\\Edit\\ReceptBank\\ReceptBank.csproj",
-      "packagesPath": "C:\\Users\\ericr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ericr\\Documents\\CLO22-HT\\Edit\\ReceptBank\\obj\\",
+      "projectPath": "/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/ReceptBank.csproj",
+      "packagesPath": "/Users/hugobrostrom/.nuget/packages/",
+      "outputPath": "/Users/hugobrostrom/Desktop/CampusCloud/GruppArb/MVCGrupp/ReceptBank/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ericr\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/hugobrostrom/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "/usr/local/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -511,16 +512,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.101/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\ericr\\Documents\\CLO22-HT\\Edit\\ReceptBank\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }
