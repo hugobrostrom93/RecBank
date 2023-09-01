@@ -1,5 +1,46 @@
 @model IEnumerable<ReceptBank.Models.ReceptViewModel>
 
+<style>
+    /* Styling for the page */
+    body {
+        font-family: 'Comic Sans MS', cursive;
+        background-color: #ffb6c1; /* Baby pink background color */
+        color: #0099cc; /* Baby blue text color */
+    }
+
+    /* Style for the table header */
+    .table thead {
+        background-color: #ffb6c1; /* Baby pink background color */
+        color: #fff; /* White text color */
+    }
+
+    /* Style for table rows */
+    .table tbody tr {
+        background-color: #e6f7ff; /* Lighter baby blue background color */
+    }
+
+    /* Style for table cell (td) */
+    .table tbody td {
+        color: #ff69b4; /* Pink text color */
+    }
+
+    /* Style for buttons */
+    .hover-effect {
+        margin-bottom: 7px;
+        border-radius: 7px;
+        background-color: #ffb6c1; /* Baby pink button background color */
+        color: #0099cc; /* Baby blue button text color */
+        border: none;
+        cursor: pointer;
+        padding: 5px 10px;
+    }
+    
+    /* Text shadow for better readability */
+    h2, .table th, .table td, .hover-effect {
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Subtle text shadow */
+    }
+</style>
+
 <h2>Recept List</h2>
 
 <a asp-controller="Recept" asp-action="Create" class="btn btn-primary">Create New</a>
@@ -16,25 +57,22 @@
         {
             <tr>
                 <td>
-                   <form method="post" asp-controller="Recept" asp-action="Ingredienser">
+                    <form method="post" asp-controller="Recept" asp-action="Ingredienser">
                         <input type="hidden" name="id" value="@Recept.ReceptId" />
-                       <button type="submit" class="hover-effect" style="margin-bottom: 7px; border-radius: 7px; background-color: rgb(161, 161, 226)">@Recept.Name</button>
+                        <button type="submit" class="hover-effect">@Recept.Name</button>
                     </form>
+                </td>
                 <td>
                     <form method="post" asp-controller="Recept" asp-action="Remove">
                         <input type="hidden" name="id" value="@Recept.ReceptId" />
-                        <button class="hover-effect" style="margin-bottom: 7px; border-radius: 7px; background-color: pink">Remove</button>
+                        <button class="hover-effect">Remove</button>
                     </form>
                     <form method="get" action="@Url.Action("Edit")">
-
-                    <input type="hidden" name="id" value="@Recept.ReceptId" />
-                    <button type="submit" class="hover-effect" style="margin-bottom: 7px; border-radius: 7px; background-color: pink">
-                        Edit
-                    </button>
-                </form>
+                        <input type="hidden" name="id" value="@Recept.ReceptId" />
+                        <button type="submit" class="hover-effect">Edit</button>
+                    </form>
                 </td>
             </tr>
-            
         }
-    </tbody>    
+    </tbody>
 </table>
