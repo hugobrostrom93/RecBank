@@ -3,6 +3,7 @@ using ReceptBank.ApplicationServices;
 using ReceptBank.Domain;
 using ReceptBank.Infrastructure;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
+using Microsoft.AspNetCore.HttpOverrides;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -45,6 +46,13 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 });
 //Lägg till authentication - om man inte är authentiserad så stöter man på en challange, för att få den authentiserad. 
 
+builder.Services.Configure<ForwardedHeadersOptions>(options =>
+{
+options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
+options.KnownNetworks.Clear();
+options.KnownProxies.Clear();
+});
+
 var app = builder.Build();
     //app.Urls.Add("https://*:5000");
 
@@ -56,6 +64,7 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

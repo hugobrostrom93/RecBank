@@ -18,5 +18,10 @@
     "recept_id": 5,
     "name": "Dinosaur",
     "ingredients": "Olja"
+  },
+  {
+    "recept_id": 6,
+    "name": "Purrito",
+    "ingredients": "Cats and filt"
   }
 ]
